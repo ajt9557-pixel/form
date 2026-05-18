@@ -1,0 +1,112 @@
+
+body{
+    background:linear-gradient(to right, #ff0000, #ff6600);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+h1 {
+    color: #08ceff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+#container {
+    background-color: rgba(255, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.812);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+#cats
+{
+   background-color: rgba(255, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.812);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    width: max-content;
+    margin-right: auto;
+     opacity: 0;
+    visibility: hidden;
+    animation: slideIn 0.5s ease-out;
+    
+}
+
+.hover-zone #cats {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX() scale(1);
+    background-color: #333333;
+}
+#cats:hover {
+    background-color: #333333;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translatex(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translatex(0);
+        opacity: 1;
+    }
+
+
+    
+}
+#btn {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+}
+#btn:hover {
+    background-color: #333333;
+}
+#btn:active {
+    background-color: #666666;
+}
+#btn2 {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+     border-radius: 20px;
+       position: absolute; 
+         transition: all 0.1s ease-out; 
+}
+#btn2:hover {
+    background-color: #333333;
+}
+#btn2:active {
+    background-color: #666666;
+}
+label {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 10px;
+    display: block;
+}
+#Pow {
+    color: #ffffff;
+    margin: 20px;
+    padding: 15px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: rgba(255, 0, 0, 0.2);
+    border-radius: 8px;
+    display: inline-block;
+}

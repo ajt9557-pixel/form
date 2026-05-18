@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <h1>welcome to my site</h1>
+       <hr>
+
+       <div id="container"> 
+           <p id="p">i want to know u more so please fill out the form below</p>
+           <label for="name">name:</label><br>
+           <input type="text" id="name" name="name"><br>
+           <label for="gender">gender:</label><br>
+           <select id="gender" name="gender">
+               <option value="male">male</option>
+               <option value="female">female</option>
+           </select><br>
+              <label for="age">age:</label><br>
+              <input type="number" id="age" name="age"><br>
+              <label for="email">email:</label><br>
+              <input type="email" id="email" name="email"><br>
+              <label for="message">message:</label><br>
+              <textarea id="message" name="message"></textarea><br>
+              <label for="ask">are you a student?</label><br>
+              <select id="ask" name="ask">
+                  <option value="yes">yes</option>
+                  <option value="no">no</option>
+              </select><br>
+                <button type="submit" id="btn">submit</button><br>
+
+                <p id="result"></p>
+       </div>
+
+       <script src="script.js"></script>
+</body>
+</html>
